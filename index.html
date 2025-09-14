@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Properties | Inmobiliaria de Lujo</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 id="main-title">Prestige Properties</h1>
+            <p>Descubre residencias exclusivas que definen el lujo.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="properties" class="container">
+            <h2>Propiedades Destacadas</h2>
+            <div id="property-listings" class="listings-grid">
+                </div>
+        </section>
+
+        <section id="map-section" class="container">
+            <h2>Ubicación de Nuestras Propiedades</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    
+<div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Agendar una Visita</h3>
+
+        <p id="selection-feedback"></p>
+
+        <p>Selecciona una fecha y hora disponible para visitar la propiedad <strong id="property-to-book"></strong>.</p>
+        <div id='calendar'></div>
+        <form id="booking-form">
+            <input type="hidden" id="selected-date" name="date">
+            <input type="hidden" id="selected-property-id" name="propertyId">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <button type="submit">Confirmar Visita</button>
+        </form>
+        <p id="form-message"></p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; <span id="ano-actual"></span> <span id="footer-agency-name"></span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

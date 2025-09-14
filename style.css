@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #1A1A1A;
+    --secondary-color: #2D2D2D;
+    --accent-color: #D4AF37; /* Un tono dorado para el lujo */
+    --text-color: #E0E0E0;
+    --text-muted: #A0A0A0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1992&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Property Listings */
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.property-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+.card-content .price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.card-specs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+.spec {
+    text-align: center;
+}
+
+.spec span {
+    display: block;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #b7952f;
+}
+
+/* Map */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border: 3px solid var(--secondary-color);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: var(--secondary-color);
+    margin: 5% auto;
+    padding: 2rem;
+    border: 1px solid var(--accent-color);
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: white;
+}
+
+/* Calendar Styling */
+#calendar {
+    margin: 2rem 0;
+    --fc-border-color: #444;
+    --fc-today-bg-color: rgba(212, 175, 55, 0.2);
+    --fc-event-bg-color: #e74c3c;
+    --fc-event-border-color: #c0392b;
+}
+
+/* Form Styling */
+#booking-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+}
+
+#booking-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#form-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-muted);
+}
+
+/* Estilos para la notificación de fecha seleccionada */
+#selection-feedback {
+    background-color: #2a3b4e; /* Un color azul oscuro que combina */
+    color: #a7d1ff; /* Un color de texto claro y legible */
+    padding: 0;
+    margin: 0 0 0 0; /* Sin margen por defecto */
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9em;
+    
+    /* Animación suave */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Clase que se añadirá con JS para mostrar la notificación */
+#selection-feedback.visible {
+    opacity: 1;
+    padding: 12px;
+    margin-bottom: 15px; /* Margen para separar del contenido */
+    max-height: 50px; /* Altura suficiente para el texto */
+}

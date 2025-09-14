@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Loft de Lujo en Vitacura",
+    "type": "Venta",
+    "price": "UF 12.500",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "specs": {
+      "sqm": "150 m²",
+      "bedrooms": 2,
+      "bathrooms": 3
+    },
+    "location": {
+      "address": "Av. Vitacura 4500, Santiago",
+      "lat": -33.4094,
+      "lng": -70.5752
+    }
+  },
+  {
+    "id": 2,
+    "title": "Departamento Moderno en Las Condes",
+    "type": "Arriendo",
+    "price": "CLP 1.200.000/mes",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "specs": {
+      "sqm": "95 m²",
+      "bedrooms": 3,
+      "bathrooms": 2
+    },
+    "location": {
+      "address": "Apoquindo 6400, Santiago",
+      "lat": -33.4111,
+      "lng": -70.5701
+    }
+  },
+  {
+    "id": 3,
+    "title": "Casa Familiar en La Dehesa",
+    "type": "Venta",
+    "price": "UF 25.000",
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "specs": {
+      "sqm": "400 m²",
+      "bedrooms": 5,
+      "bathrooms": 4
+    },
+    "location": {
+      "address": "Av. La Dehesa 1200, Santiago",
+      "lat": -33.3619,
+      "lng": -70.5186
+    }
+  }
+   
+]
