@@ -77,7 +77,7 @@ h2 {
 
 .property-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 15px 30px rgba(246, 245, 245, 0.1);
 }
 
 .property-card img {
@@ -190,8 +190,8 @@ h2 {
 /* Calendar Styling */
 #calendar {
     margin: 2rem 0;
-    --fc-border-color: #444;
-    --fc-today-bg-color: rgba(212, 175, 55, 0.2);
+    --fc-border-color: #ffffff;
+    --fc-today-bg-color: rgba(253, 194, 3, 0.2);
     --fc-event-bg-color: #e74c3c;
     --fc-event-border-color: #c0392b;
 }
@@ -256,4 +256,8 @@ footer {
     padding: 12px;
     margin-bottom: 15px; /* Margen para separar del contenido */
     max-height: 50px; /* Altura suficiente para el texto */
+}
+
+.fc-event-title {
+    color: #fa0202;
 }
